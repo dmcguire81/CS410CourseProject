@@ -1,5 +1,11 @@
 # Enhance `MeTA Toolkit` and `metapy` Usability
 
+## Authors
+**Team DJ:**
+* David McGuire <dmcguire@illinois.edu>
+* Jose Cols Matheus <josec5@illinois.edu>
+
+## Proposal
 The goal of this project is to enhance the usability of the `MeTA Toolkit` and the `metapy` Python wrapper for future students of `CS 410 Text Information Systems`. Toward this end, several "pain points" have been identified, based on personal experience and the experience of our current cohort. This list overlaps with the *implied* motivation for some of the suggested improvements, but some of the motivation is entirely new and undocumented, thus far, providing a fresh perspective on the issue.
 
 The primary pain point for `MeTA Toolkit` and `metapy` is the lack of build support. Concretely, a defect has existed on the main project for several years and has gone unaddressed (see [meta-toolkit/meta #212](https://github.com/meta-toolkit/meta/issues/212)), and this causes the OS-specific builds to fail for any Operating System for which there is not already a pre-built binary package. Because the list of pre-built binaries is small, static, and aging in the absense of *any project maintenance whatsoever*, the experience is getting worse, year-over-year. This project aims to address the build support problem by creating maintainable, automated build infrastructure on public, cloud-based systems (e.g.: [GitHub Actions](https://github.com/features/actions), [CircleCI](https://circleci.com/), [Travis CI](https://www.travis-ci.com/), etc.). Because the original maintainers have completely abandoned the project, and do not respond to requests for support, this will be done on a fork of both the main `MeTA Toolkit` repo ([meta-toolkit/meta](https://github.com/meta-toolkit/meta)), as well as the `metapy` Python Wrapper repo ([meta-toolkit/metapy](https://github.com/meta-toolkit/metapy)). From there, the publicly-accessible infrastructure will be handed over to `CS 410` TA's for future maintenance. This build infrastructure will maintain a broad set of Python-version-specific builds that *continuously integrate* `MeTA Toolkit` C++ code and `metapy` Python code, to test for new defects as underlying dependencies change and evolve. Moreover, the build configuration will be extensible by future maintainers to new versions of Python as they are released.
