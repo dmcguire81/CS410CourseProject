@@ -1,3 +1,12 @@
-# CourseProject
+# `MeTA Toolkit` and `metapy` System Extension
 
-Please fork this repository and paste the github link of your fork on Microsoft CMT. Detailed instructions are on Coursera under Week 1: Course Project Overview/Week 9 Activities.
+## Summary
+
+* **Theme:** System Extension
+* **Topic:** Enhance `MeTA Toolkit` and `metapy` usability
+
+## Artifacts
+
+* Project Proposal:
+    * [Markdown](./Proposal.md)
+    * [PDF](./Proposal.pdf)
